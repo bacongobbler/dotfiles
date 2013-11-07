@@ -1,0 +1,7 @@
+[user]
+	name = Matthew Fisher
+	email = matthewf@activestate.com
+[alias]
+	co = checkout
+	ci = commit
+	s = status
