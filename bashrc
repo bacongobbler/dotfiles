@@ -10,6 +10,10 @@ HISTFILESIZE=2000
 # match all files and zero or more directories and subdirectories.
 shopt -s globstar
 
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS
+shopt -s checkwinsize
+
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
     xterm-color) color_prompt=yes;;
@@ -26,6 +30,10 @@ fi
 export EDITOR=vim
 export GOPATH=~/go/
 export PATH=$HOME/bin:$PATH
+
+# RVM specific stuff
+export PATH=$HOME/.rvm/bin:$PATH
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # Custom bash prompt via kirsle.net/wizards/ps1.html
 export PS1="\[$(tput setaf 7 && tput bold)\]λ\[$(tput sgr0)\] "
