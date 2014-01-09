@@ -28,4 +28,4 @@ export GOPATH=~/go/
 export PATH=$HOME/bin:$PATH
 
 # Custom bash prompt via kirsle.net/wizards/ps1.html
-export PS1="\[$(tput bold)\]\[$(tput setaf 3)\]\u@\h: \[$(tput setaf 6)\]\w \[$(tput sgr0)\]\n\[$(tput setaf 7 && tput bold)\]λ\[$(tput sgr0)\] "
+export PS1="\[$(tput setaf 7 && tput bold)\]λ\[$(tput sgr0)\] "
