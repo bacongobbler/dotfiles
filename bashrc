@@ -35,5 +35,4 @@ export PATH=$HOME/bin:$PATH
 export PATH=$HOME/.rvm/bin:$PATH
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-# Custom bash prompt via kirsle.net/wizards/ps1.html
-export PS1="\[$(tput setaf 7 && tput bold)\]λ\[$(tput sgr0)\] "
+export PS1="><> "
