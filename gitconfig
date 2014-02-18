@@ -1,9 +1,7 @@
 [user]
 	name = Matthew Fisher
-	email = matthewf@activestate.com
+	email = me@bacongobbler.com
 [alias]
 	co = checkout
 	ci = commit
 	s = status
-[push]
-	default = simple
