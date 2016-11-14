@@ -7,6 +7,8 @@
 	excludesfile = ~/.gitignore_global
 [color]
 	ui = auto
+	editor = vim
+	whitespace = cr-at-eol
 [color "diff"]
 	meta = yellow bold
 	frag = magenta bold
@@ -23,3 +25,5 @@
 	s = status
 [push]
 	default = current
+[url "git@github.com:"]
+	insteadOf = gh:
