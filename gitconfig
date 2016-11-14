@@ -1,7 +1,25 @@
 [user]
 	name = Matthew Fisher
-	email = me@bacongobbler.com
+	email = mfisher@deis.com
+[core]
+	editor = vim
+	whitespace = fix,trailing-space,cr-at-eol
+	excludesfile = ~/.gitignore_global
+[color]
+	ui = auto
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = cyan bold
 [alias]
-	co = checkout
 	ci = commit
+	co = checkout
 	s = status
+[push]
+	default = current

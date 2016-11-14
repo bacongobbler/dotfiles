@@ -1,13 +1,10 @@
-# Stackato client aliases
-alias st="stackato"
-
-# vagrant aliases
-alias vu="vagrant up"
-alias vs="vagrant ssh"
-alias vd="vagrant destroy"
-
-# ls aliases
-alias ls='ls --color=auto'
+alias d='docker'
+alias dm='docker-machine'
+alias drmf='docker rm -f $(docker ps -aq)'
+alias k='kubectl'
+alias kd='kubectl --namespace=deis'
 alias l='ls'
 alias ll='ls -al'
-alias la='ls -A'
+alias vu='vagrant up'
+alias vs='vagrant ssh'
+alias vd='vagrant destroy'
