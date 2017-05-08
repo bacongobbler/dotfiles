@@ -1,6 +1,6 @@
 [user]
 	name = Matthew Fisher
-	email = mfisher@deis.com
+	email = matt.fisher@microsoft.com
 [core]
 	editor = vim
 	whitespace = fix,trailing-space,cr-at-eol
