@@ -1,6 +1,7 @@
 [user]
 	name = Matthew Fisher
 	email = matt.fisher@microsoft.com
+	signingkey = 7EFAA34E
 [core]
 	editor = vim
 	whitespace = fix,trailing-space,cr-at-eol
@@ -20,7 +21,8 @@
 	changed = yellow bold
 	untracked = cyan bold
 [alias]
-	ci = commit
+	ci = commit --gpg-sign
+	cp = cherry-pick -x --gpg-sign
 	co = checkout
 	s = status
 [push]
