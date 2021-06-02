@@ -5,8 +5,8 @@ syntax enable
 set smartindent
 set exrc
 set guicursor=
+set number
 set relativenumber
-set nu
 set hidden
 set noerrorbells
 set nowrap
