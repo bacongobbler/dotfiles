@@ -2,8 +2,8 @@ alias d='docker'
 alias dm='docker-machine'
 alias drmf='docker rm -f $(docker ps -aq)'
 alias k='kubectl'
-alias l='ls'
-alias ll='ls -al'
+alias l='ls --color'
+alias ll='ls -al --color'
 alias mk='minikube'
 
 # neovim all the things
