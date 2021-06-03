@@ -1,6 +1,7 @@
 " ---------- SETTINGS  ----------
 
 syntax enable
+colorscheme zenburn
 
 set smartindent
 set exrc
