@@ -3,11 +3,12 @@
 syntax enable
 colorscheme zenburn
 
+set spell
+
 set smartindent
-set exrc
 set guicursor=
 set relativenumber
-set nu
+set number
 set hidden
 set noerrorbells
 set nowrap
@@ -37,6 +38,9 @@ Plug 'airblade/vim-gitgutter'
 
 " it's ack, for vim.
 Plug 'mileszs/ack.vim'
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
