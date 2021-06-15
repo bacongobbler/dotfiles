@@ -1,5 +1,5 @@
 source $HOME/.bash_aliases
-export PS1="><> "
+export PS1="\e[0;32m\u@\h\e[m \e[0;36m\w\e[m ><> "
 
 export EDITOR=vim
 export GOPATH=$HOME/code/go
