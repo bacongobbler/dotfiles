@@ -1,0 +1,118 @@
+[settings]
+format-padding = 1
+format-margin = 1
+
+[colors]
+background = #282828
+background-alt = #d79921
+foreground = #ebdbb2
+foreground-alt = #555
+primary = #ffb52a
+secondary = #e60053
+alert = #bd2c40
+
+[bar/top]
+font-0 = "Inconsolata:size=10;1"
+font-1 = "Inconsolata Nerd Font:size=10;1"
+wm-restack = i3
+
+width = 100%
+height = 24
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-size = 0
+border-color = #000000
+
+;padding-left = 0
+;padding-right = 2
+
+;module-margin-left = 2
+;module-margin-right = 2
+
+modules-left = appmenu dunst mpd
+#modules-center = mpd
+modules-right = alsa ethernet wifi date
+
+[module/appmenu]
+type=custom/text
+content=
+click-left=rofi -show drun -modi drun -display-drun "Applications"
+
+[module/mpd]
+type = internal/mpd
+; Host where mpd is running (either ip or domain name)
+; Can also be the full path to a unix socket where mpd is running.
+host = 127.0.0.1
+port = 6600
+interval = 2
+format= <label>
+format-underline = #ff8d8d
+
+[module/alsa]
+type=internal/pulseaudio
+format-volume-underline = ${cols.accent_light}
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+format-volume = <ramp-volume> <label-volume>
+format-muted-underline = ${cols.accent_light}
+label-muted = ﱝ %percentage%%
+use-ui-max = false
+
+[module/net-base]
+type=internal/network
+format-connected-underline = ${cols.accent_light}
+format-disconnected-underline = ${cols.accent_light}
+label-connected = %local_ip%
+
+[module/ethernet]
+inherit=module/net-base
+interface=enp3s0
+format-connected =  <label-connected>
+
+[module/wifi]
+inherit=module/net-base
+interface=wlan0
+format-connected =  <label-connected>
+
+[module/date]
+type = internal/date
+label = %time% %date%
+date = %b %d%
+time = %H:%M
+format-underline = ${cols.accent_light}
+
+[module/dunst]
+type = custom/ipc
+initial = 1
+format-margin = 0
+hook-0 = echo "%{A1:dunstctl set-paused true && polybar-msg hook dunst 2:}%{A}" &
+hook-1 = echo "%{A1:dunstctl set-paused false && polybar-msg hook dunst 1:}%{A}" &
+
+[module/battery]
+type = internal/battery
+
+battery=BAT1
+adapter=ADP1
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+format-charging = <ramp-capacity>  <label-charging>
+format-discharging = <ramp-capacity>  <label-discharging>
+
+label-full =  100%
+
+format-charging-underline = ${cols.accent_light}
+format-discharging-underline = #${cols.accent_light}
+format-full-underline = ${cols.accent_light}
+# vi: ft=dosini

@@ -1,7 +1,6 @@
 " ---------- SETTINGS  ----------
 
 syntax enable
-colorscheme zenburn
 
 set spell
 
@@ -11,13 +10,18 @@ set relativenumber
 set number
 set hidden
 set noerrorbells
-set nowrap
+" set nowrap
 set noswapfile
 set nobackup
 set scrolloff=8
 set colorcolumn=80
 set signcolumn=yes
 set cmdheight=2
+
+" ---------- DICTIONARY ----------
+
+:set dictionary?
+:set dictionary+=(stdpath('data').'words')
 
 " ---------- KEYMAPS ----------
 
@@ -42,7 +46,18 @@ Plug 'mileszs/ack.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
+" the best theme. Ever.
+Plug 'morhetz/gruvbox'
+" transparent backgrounds for color schemes that don't support it
+Plug 'tribela/vim-transparent'
+
+" LSP config
+Plug 'neovim/nvim-lspconfig'
+
 call plug#end()
+
+set background=dark
+colorscheme gruvbox
 
 " ---------- PLUGIN SETTINGS ----------
 
@@ -60,3 +75,12 @@ if executable('rg')
 	let g:ackprg = 'rg --vimgrep --no-heading'
 endif
 
+" ---------- LANGUAGE SERVERS ----------
+
+lua << EOF
+local pid = vim.fn.getpid()
+local omnisharp_bin = "/usr/local/omnisharp/run"
+require'lspconfig'.omnisharp.setup {
+	cmd = { omnisharp_bin, "--languageserver" , "--hostPID", tostring(pid) };
+}
+EOF

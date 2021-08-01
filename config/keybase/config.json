@@ -1,0 +1,13 @@
+{
+    "current_user": "bacongobbler",
+    "mountdir": "/run/user/1000/keybase/kbfs",
+    "mountdirdefault": "/run/user/1000/keybase/kbfs",
+    "users": {
+        "bacongobbler": {
+            "device": "15f9f96a3550226e1bcad1b2a7a02b18",
+            "id": "9ce9a4e5e685604216029a059908cd19",
+            "name": "bacongobbler",
+            "salt": "a83f402d201f5d545a9c375cb47a8a98"
+        }
+    }
+}
