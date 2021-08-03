@@ -3,14 +3,14 @@
 	email = matt.fisher@microsoft.com
 	signingkey = 967F8AC5E2216F9F4FD270AD92AA783CBAAE8E3B
 [core]
-	editor = vim
+	editor = nvim
 	whitespace = fix,trailing-space,cr-at-eol
 	excludesfile = ~/.gitignore_global
 [commit]
 	gpgsign = true
 [color]
 	ui = auto
-	editor = vim
+	editor = nvim
 	whitespace = cr-at-eol
 [color "diff"]
 	meta = yellow bold
