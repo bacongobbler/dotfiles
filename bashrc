@@ -26,3 +26,5 @@ export GPG_TTY=$(tty)
 source $HOME/.cargo/env
 
 export GTK_THEME=gruvbox-dark-gtk
+
+export DOTNET_ROOT=$HOME/.dotnet

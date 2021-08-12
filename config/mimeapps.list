@@ -7,7 +7,9 @@ x-scheme-handler/https=firefox.desktop
 x-scheme-handler/about=firefox.desktop
 x-scheme-handler/unknown=firefox.desktop
 x-scheme-handler/etcher=balena-etcher-electron.desktop
+x-content/image-dcf=shotwell.desktop
 
 [Added Associations]
 x-scheme-handler/tg=userapp-Telegram Desktop-P4WV60.desktop;
 text/plain=visual-studio-code.desktop;
+x-content/image-dcf=shotwell.desktop;

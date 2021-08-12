@@ -6,7 +6,7 @@ After=display-manager.service
 [Service]
 Type=simple
 Environment=XAUTHORITY=%h/.Xauthority
-ExecStart=/usr/bin/imwheel --kill --buttons 45
+ExecStart=/usr/bin/imwheel --kill --buttons "4 5"
 ExecStop=/usr/bin/pkill imwheel
 RemainAfterExit=yes
 

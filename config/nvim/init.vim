@@ -31,28 +31,19 @@ nnoremap <leader>n :Explore<CR>
 
 " ---------- PLUGINS ----------
 
-" fire up vim-plug
 call plug#begin(stdpath('data').'/plugged')
 
-" easy code alignment tool
 Plug 'junegunn/vim-easy-align'
-
-" show git changes in the gutter
 Plug 'airblade/vim-gitgutter'
-
-" it's ack, for vim.
 Plug 'mileszs/ack.vim'
-
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-
-" the best theme. Ever.
 Plug 'morhetz/gruvbox'
-" transparent backgrounds for color schemes that don't support it
-Plug 'tribela/vim-transparent'
+Plug 'hrsh7th/nvim-compe'
 
-" LSP config
+" LSP/Language-specific plugins
 Plug 'neovim/nvim-lspconfig'
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
@@ -64,7 +55,6 @@ colorscheme gruvbox
 " vim-easy-alignment settings.
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
-
 nmap <leader>s :tab split<CR>:Ack ""<Left>
 nmap <leader>S :tab split<CR>:Ack <C-r><C-w><CR>
 
@@ -78,9 +68,18 @@ endif
 " ---------- LANGUAGE SERVERS ----------
 
 lua << EOF
+
+-- nvim_lsp object
+local nvim_lsp = require'lspconfig'
+
+-- omnisharp
 local pid = vim.fn.getpid()
 local omnisharp_bin = "/usr/local/omnisharp/run"
 require'lspconfig'.omnisharp.setup {
 	cmd = { omnisharp_bin, "--languageserver" , "--hostPID", tostring(pid) };
 }
+
+-- rust-analyzer
+nvim_lsp.rust_analyzer.setup({ on_attach=on_attach })
+
 EOF
