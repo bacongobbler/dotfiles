@@ -38,11 +38,14 @@ Plug 'airblade/vim-gitgutter'
 Plug 'mileszs/ack.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'hrsh7th/vim-vsnip'
+
+" mmm. gruvbox.
 Plug 'morhetz/gruvbox'
-Plug 'hrsh7th/nvim-compe'
 
 " LSP/Language-specific plugins
 Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-compe'
 Plug 'rust-lang/rust.vim'
 
 call plug#end()
@@ -65,21 +68,7 @@ if executable('rg')
 	let g:ackprg = 'rg --vimgrep --no-heading'
 endif
 
-" ---------- LANGUAGE SERVERS ----------
+" ---------- EXTERNAL PLUGINS ----------
 
-lua << EOF
-
--- nvim_lsp object
-local nvim_lsp = require'lspconfig'
-
--- omnisharp
-local pid = vim.fn.getpid()
-local omnisharp_bin = "/usr/local/omnisharp/run"
-require'lspconfig'.omnisharp.setup {
-	cmd = { omnisharp_bin, "--languageserver" , "--hostPID", tostring(pid) };
-}
-
--- rust-analyzer
-nvim_lsp.rust_analyzer.setup({ on_attach=on_attach })
-
-EOF
+luafile ~/.config/nvim/lua/lsp/lsp-config.lua
+luafile ~/.config/nvim/lua/lsp/compe.lua
