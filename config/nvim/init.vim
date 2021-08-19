@@ -47,8 +47,8 @@ Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
-set background=dark
 colorscheme gruvbox
+set background=dark
 
 " ---------- PLUGIN SETTINGS ----------
 

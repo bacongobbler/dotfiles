@@ -20,11 +20,11 @@ export PS1="\[${GREEN}\]\u@\h \[${BLUE}\]\w \[${NORMAL}\]><> "
 export EDITOR=vim
 export GOPATH=$HOME/code/go
 export GOBIN=$GOPATH/bin
-export PATH=$HOME/bin:$HOME/.local/bin:$GOPATH/bin:$HOME/.dotnet:$HOME/.dotnet/tools:/usr/local/omnisharp/bin:/usr/local/node/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:$GOPATH/bin:/usr/local/dotnet:$HOME/.dotnet/tools:/usr/local/omnisharp/bin:/usr/local/node/bin:/usr/local/neovim/bin:$PATH
 
 export GPG_TTY=$(tty)
 source $HOME/.cargo/env
 
 export GTK_THEME=gruvbox-dark-gtk
 
-export DOTNET_ROOT=$HOME/.dotnet
+export DOTNET_ROOT=/usr/local/dotnet
