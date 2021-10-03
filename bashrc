@@ -15,16 +15,19 @@ REVERSE=$(tput smso)
 UNDERLINE=$(tput smul)
 
 source $HOME/.bash_aliases
-export PS1="\[${GREEN}\]\u@\h \[${BLUE}\]\w \[${NORMAL}\]><> "
 
-export EDITOR=vim
+export PS1="\[${GREEN}\]\u@\h \[${CYAN}\]\w \[${NORMAL}\]><> "
+export EDITOR=nvim
 export GOPATH=$HOME/code/go
 export GOBIN=$GOPATH/bin
-export PATH=$HOME/bin:$HOME/.local/bin:$GOPATH/bin:/usr/local/dotnet:$HOME/.dotnet/tools:/usr/local/omnisharp/bin:/usr/local/node/bin:/usr/local/neovim/bin:$PATH
-
 export GPG_TTY=$(tty)
+export GTK_THEME=gruvbox-dark-gtk
+export DOTNET_ROOT=/usr/local/dotnet
+export PATH=$HOME/bin:$HOME/.local/bin:$GOPATH/bin:/usr/local/neovim/bin:$PATH
+
 source $HOME/.cargo/env
 
-export GTK_THEME=gruvbox-dark-gtk
-
-export DOTNET_ROOT=/usr/local/dotnet
+# fzf config
+source $HOME/.config/bash/fzf/completion.bash
+source $HOME/.config/bash/fzf/key-bindings.bash
+export FZF_DEFAULT_COMMAND="rg --files --hidden"

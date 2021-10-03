@@ -23,12 +23,6 @@ set cmdheight=2
 :set dictionary?
 :set dictionary+=(stdpath('data').'words')
 
-" ---------- KEYMAPS ----------
-
-let mapleader=" "
-
-nnoremap <leader>n :Explore<CR>
-
 " ---------- PLUGINS ----------
 
 call plug#begin(stdpath('data').'/plugged')
@@ -39,6 +33,7 @@ Plug 'mileszs/ack.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'hrsh7th/vim-vsnip'
+Plug 'editorconfig/editorconfig-vim'
 
 " mmm. gruvbox.
 Plug 'morhetz/gruvbox'
@@ -72,3 +67,9 @@ endif
 
 luafile ~/.config/nvim/lua/lsp/lsp-config.lua
 luafile ~/.config/nvim/lua/lsp/compe.lua
+
+" ---------- KEYMAPS ----------
+
+let mapleader=" "
+
+nnoremap <silent> <leader>n :Files<CR>
