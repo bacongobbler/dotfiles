@@ -23,7 +23,7 @@
 	changed = yellow bold
 	untracked = cyan bold
 [alias]
-	ci = commit --gpg-sign --signoff
+	ci = commit --signoff
 	cp = cherry-pick -x
 	co = checkout
 	s = status
