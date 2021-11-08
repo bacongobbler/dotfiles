@@ -1,6 +1,6 @@
 [user]
 	name = Matthew Fisher
-	email = matt.fisher@fishworks.io
+	email = matt.fisher@fermyon.com
 	signingkey = 967F8AC5E2216F9F4FD270AD92AA783CBAAE8E3B
 [core]
 	editor = nvim
