@@ -22,8 +22,14 @@ export GOPATH=$HOME/code/go
 export GOBIN=$GOPATH/bin
 export GPG_TTY=$(tty)
 export GTK_THEME=gruvbox-dark-gtk
-export DOTNET_ROOT=/usr/local/dotnet
 export PATH=$HOME/bin:$HOME/.local/bin:$GOPATH/bin:/usr/local/neovim/bin:$PATH
+
+# NodeJS
+export PATH=/usr/local/node/bin:$PATH
+
+# .NET config
+export DOTNET_ROOT=/usr/local/dotnet
+export PATH=$DOTNET_ROOT:$HOME/.dotnet/tools:$PATH
 
 source $HOME/.cargo/env
 
