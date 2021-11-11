@@ -1,5 +1,5 @@
 -- nvim_lsp object
-local nvim_lsp = require'lspconfig'
+local nvim_lsp = require('lspconfig')
 
 local on_attach = function(client, bufnr)
 	local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
@@ -31,17 +31,44 @@ local on_attach = function(client, bufnr)
 	buf_set_keymap('n', '<leader>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
 
+local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
--- omnisharp
+-- C# (omnisharp)
 local pid = vim.fn.getpid()
 local omnisharp_bin = "/usr/local/omnisharp/run"
 nvim_lsp.omnisharp.setup {
 	on_attach = on_attach,
+	capabilities = capabilities,
 	cmd = { omnisharp_bin, "--languageserver" , "--hostPID", tostring(pid) }
 }
 
--- rust-analyzer
+-- Rust (rust-analyzer)
 nvim_lsp.rust_analyzer.setup {
 	on_attach = on_attach,
+	capabilities = capabilities
+}
+
+-- Lua (lua-language-server)
+local sumneko_root_path = vim.env.HOME .. '/code/lua-language-server'
+local sumneko_binary = sumneko_root_path..'/bin/Linux/lua-language-server'
+local runtime_path = vim.split(package.path, ';')
+nvim_lsp.sumneko_lua.setup {
+	on_attach = on_attach,
+	capabilities = capabilities,
+	cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"},
+	settings = {
+		Lua = {
+			runtime = {
+				version = 'LuaJIT',
+				path = runtime_path
+			},
+			diagnostics = {
+				globals = {'vim'}
+			},
+			workspace = {
+				library = vim.api.nvim_get_runtime_file('', true)
+			},
+		}
+	}
 }
 

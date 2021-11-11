@@ -15,6 +15,7 @@ Plug 'morhetz/gruvbox'
 -- LSP/Language-specific plugins
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'rust-lang/rust.vim'
 
 vim.call('plug#end')
