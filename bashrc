@@ -57,6 +57,7 @@ source $HOME/.config/bash/alacritty.bash
 
 # If we're on Windows via WSL
 if [ -z "${WSL_DISTRO_NAME}" ]; then
+
 	# SSH Socket
 	# Removing Linux SSH socket and replacing it by link to wsl2-ssh-pageant socket
 	export SSH_AUTH_SOCK=$HOME/.ssh/agent.sock
@@ -74,5 +75,6 @@ if [ -z "${WSL_DISTRO_NAME}" ]; then
 		rm -rf $GPG_AGENT_SOCK
 		setsid nohup socat UNIX-LISTEN:$GPG_AGENT_SOCK,fork EXEC:"$HOME/.ssh/wsl2-ssh-pageant.exe --gpg S.gpg-agent" &>/dev/null &
 	fi
+
 fi
 
