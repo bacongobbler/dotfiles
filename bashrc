@@ -56,7 +56,7 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden"
 source $HOME/.config/bash/alacritty.bash
 
 # If we're on Windows via WSL
-if [ -z "${WSL_DISTRO_NAME}" ]; then
+if [ ! -z "${WSL_DISTRO_NAME}" ]; then
 
 	# SSH Socket
 	# Removing Linux SSH socket and replacing it by link to wsl2-ssh-pageant socket
