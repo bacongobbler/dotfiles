@@ -48,6 +48,12 @@ nvim_lsp.rust_analyzer.setup {
 	capabilities = capabilities
 }
 
+-- Go (gopls)
+nvim_lsp.gopls.setup {
+	on_attach = on_attach,
+	capabilities = capabilities
+}
+
 -- Lua (lua-language-server)
 local sumneko_root_path = vim.env.HOME .. '/code/lua-language-server'
 local sumneko_binary = sumneko_root_path..'/bin/Linux/lua-language-server'
