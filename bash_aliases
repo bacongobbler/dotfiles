@@ -16,3 +16,7 @@ alias idk='echo -n "¯\_(ツ)_/¯"'
 alias wtf='echo -n "❨╯°□°❩╯︵┻━┻"'
 alias wat='echo -n "⚆_⚆"'
 alias fucking='sudo'
+
+# common typos
+alias carog='cargo'
+alias udo='sudo'
