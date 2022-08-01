@@ -33,3 +33,5 @@
 	insteadOf = gh:
 [url "git@git.fishr.fish:"]
 	insteadOf = fi:
+[init]
+	defaultBranch = main

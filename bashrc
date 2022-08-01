@@ -29,7 +29,7 @@ export GTK_THEME=gruvbox-dark-gtk
 export PATH=/usr/local/neovim/bin:$PATH
 
 # .NET
-export DOTNET_ROOT=/usr/local/dotnet
+export DOTNET_ROOT=$HOME/.dotnet
 export PATH=$DOTNET_ROOT:$HOME/.dotnet/tools:$PATH
 
 # NodeJS
@@ -45,7 +45,8 @@ source $HOME/.cargo/env
 # Go
 export GOPATH=$HOME/code/go
 export GOBIN=$GOPATH/bin
-export PATH=/usr/local/go/bin:$GOPATH/bin:$PATH
+export GOROOT=/usr/local/go
+export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
 
 # fzf
 source $HOME/.config/bash/fzf/completion.bash
