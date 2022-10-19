@@ -8,6 +8,7 @@
 	excludesfile = ~/.gitignore_global
 [commit]
 	gpgsign = true
+	signOff = true
 [color]
 	ui = auto
 	editor = nvim
