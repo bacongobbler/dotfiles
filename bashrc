@@ -22,6 +22,9 @@ export PATH=$HOME/bin:$HOME/.local/bin:$PATH
 # bash
 source $HOME/.bash_aliases
 
+# binaryen
+export PATH=/usr/local/binaryen/bin:$PATH
+
 # GTK
 export GTK_THEME=gruvbox-dark-gtk
 
