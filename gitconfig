@@ -1,7 +1,7 @@
 [user]
 	name = Matthew Fisher
 	email = matt.fisher@fermyon.com
-	signingkey = 967F8AC5E2216F9F4FD270AD92AA783CBAAE8E3B
+	signingkey = 887ED80487CE4E0F
 [core]
 	editor = nvim
 	whitespace = fix,trailing-space,cr-at-eol
