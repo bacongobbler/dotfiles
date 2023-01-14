@@ -25,6 +25,9 @@ source $HOME/.bash_aliases
 # binaryen
 export PATH=/usr/local/binaryen/bin:$PATH
 
+# Fermyon Cloud
+export PATH=/usr/local/cloud:$PATH
+
 # GTK
 export GTK_THEME=gruvbox-dark-gtk
 
@@ -61,8 +64,7 @@ source $HOME/.config/bash/alacritty.bash
 
 export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 gpgconf --launch gpg-agent
-gpg-connect-agent updatestartuptty /bye > /dev/null
-
+echo UPDATESTARTUPTTY | gpg-connect-agent > /dev/null
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
