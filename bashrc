@@ -62,9 +62,8 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden"
 # alacritty
 source $HOME/.config/bash/alacritty.bash
 
-export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
-gpgconf --launch gpg-agent
-echo UPDATESTARTUPTTY | gpg-connect-agent > /dev/null
+# protoc
+export PATH=/usr/local/protoc/bin:$PATH
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
