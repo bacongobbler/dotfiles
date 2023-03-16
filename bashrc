@@ -25,11 +25,11 @@ source $HOME/.bash_aliases
 # binaryen
 export PATH=/usr/local/binaryen/bin:$PATH
 
+# Feishin
+export PATH=/usr/local/feishin:$PATH
+
 # Fermyon Cloud
 export PATH=/usr/local/cloud:$PATH
-
-# GTK
-export GTK_THEME=gruvbox-dark-gtk
 
 # neovim
 export PATH=/usr/local/neovim/bin:$PATH
