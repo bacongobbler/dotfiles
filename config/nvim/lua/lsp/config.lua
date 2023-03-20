@@ -55,26 +55,7 @@ nvim_lsp.gopls.setup {
 }
 
 -- Lua (lua-language-server)
-local sumneko_root_path = vim.env.HOME .. '/code/lua-language-server'
-local sumneko_binary = sumneko_root_path..'/bin/Linux/lua-language-server'
-local runtime_path = vim.split(package.path, ';')
-nvim_lsp.sumneko_lua.setup {
+nvim_lsp.lua_ls.setup {
 	on_attach = on_attach,
-	capabilities = capabilities,
-	cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"},
-	settings = {
-		Lua = {
-			runtime = {
-				version = 'LuaJIT',
-				path = runtime_path
-			},
-			diagnostics = {
-				globals = {'vim'}
-			},
-			workspace = {
-				library = vim.api.nvim_get_runtime_file('', true)
-			},
-		}
-	}
+	capabilities = capabilities
 }
-
