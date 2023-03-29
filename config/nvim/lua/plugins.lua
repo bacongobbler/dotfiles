@@ -9,9 +9,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'editorconfig/editorconfig-vim'
 
--- mmm. gruvbox.
--- Plug 'morhetz/gruvbox'
-
 -- LSP/Language-specific plugins
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-cmp'
