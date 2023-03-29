@@ -10,7 +10,7 @@ Plug 'hrsh7th/vim-vsnip'
 Plug 'editorconfig/editorconfig-vim'
 
 -- mmm. gruvbox.
-Plug 'morhetz/gruvbox'
+-- Plug 'morhetz/gruvbox'
 
 -- LSP/Language-specific plugins
 Plug 'neovim/nvim-lspconfig'

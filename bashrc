@@ -31,6 +31,12 @@ export PATH=/usr/local/feishin:$PATH
 # Fermyon Cloud
 export PATH=/usr/local/cloud:$PATH
 
+# GTK
+export GTK_THEME=gruvbox-dark-gtk
+
+# Lua LSP
+export PATH=/usr/local/lua-language-server/bin:$PATH
+
 # neovim
 export PATH=/usr/local/neovim/bin:$PATH
 
