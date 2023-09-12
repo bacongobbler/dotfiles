@@ -55,7 +55,7 @@ nvim_lsp.gopls.setup {
 }
 
 -- Lua (lua-language-server)
-nvim_lsp.sumneko_lua.setup {
+nvim_lsp.lua_ls.setup {
 	on_attach = on_attach,
 	capabilities = capabilities,
 }
