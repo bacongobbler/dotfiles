@@ -18,3 +18,5 @@ config/dconf/user
 config/mimeapps.list
 config/obs-studio
 config/transmission/
+config/spin-aka
+config/go

@@ -70,3 +70,10 @@ export PATH=/usr/local/protoc/bin:$PATH
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+# fnm
+FNM_PATH="/home/bacongobbler/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "`fnm env`"
+fi
