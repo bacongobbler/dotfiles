@@ -25,7 +25,7 @@ export GTK2_RC_FILES=/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
 export QT_STYLE_OVERRIDE=Adwaita-Dark
 
 # bash
-source bash_aliases
+source $HOME/.config/bash/aliases
 
 # binaryen
 export PATH=/usr/local/binaryen/bin:$PATH
@@ -63,8 +63,8 @@ export GOROOT=/usr/lib/go
 export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
 
 # fzf
-source ../fzf/completion.bash
-source ../fzf/key-bindings.bash
+source $HOME/.config/fzf/completion.bash
+source $HOME/.config/fzf/key-bindings.bash
 export FZF_DEFAULT_COMMAND="rg --files --hidden"
 
 # protoc
