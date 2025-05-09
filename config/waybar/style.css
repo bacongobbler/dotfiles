@@ -1,0 +1,194 @@
+* {
+	font-family: "Hack Nerd Font";
+	font-weight: bold;
+	font-size: 14px;
+	letter-spacing: -0.1rem;
+	border-radius: 0px;
+}
+
+window#waybar {
+	background: transparent;
+}
+
+tooltip {
+	color: white;
+	background-color: #11111b;
+	border-radius: 7px;
+	border: 1px solid white;
+}
+
+/* --------------------------------------
+ * Workspaces
+ * -------------------------------------- */
+
+#workspaces button {
+	box-shadow: none;
+	text-shadow: none;
+	padding: 0px;
+	border-radius: 16px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-left: 4px;
+	margin-right: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	color: #cdd6f4;
+	background: transparent;
+	animation: ws_normal 20s ease-in-out 1;
+}
+
+#workspaces button.active {
+	color: black;
+	background-color: #34e8bd;
+}
+
+#workspaces button:hover {
+	color: black;
+	background-color: #34e8bd;
+}
+
+
+/* --------------------------------------
+ * Modules
+ * -------------------------------------- */
+
+.modules-left {
+	margin-left: 2em;
+}
+
+.modules-right {
+	margin-right: 2em;
+}
+
+label.module {
+	padding: 0 0.5em;
+}
+
+#backlight,
+#battery,
+#bluetooth,
+#custom-cava,
+#custom-cliphist,
+#clock,
+#clock,
+#custom-cpuinfo,
+#cpu,
+#custom-github_hyde,
+#custom-gpuinfo,
+#custom-hyprsunset,
+#idle_inhibitor,
+#custom-keybindhint,
+#language,
+#memory,
+#mpris,
+#network,
+#custom-notifications,
+#custom-power,
+#privacy,
+#pulseaudio,
+#custom-sensorsinfo,
+#custom-spotify,
+#taskbar,
+#taskbar,
+#taskbar,
+#taskbar#windows,
+#temperature,
+#custom-theme,
+#tray,
+#custom-updates,
+#custom-wallchange,
+#custom-wbar,
+#custom-weather,
+#window,
+#workspaces,
+#workspaces,
+#workspaces,
+#custom-l_end,
+#custom-r_end,
+#custom-sl_end,
+#custom-sr_end,
+#custom-rl_end,
+#custom-rr_end {
+    color: white;
+    background: transparent;
+    opacity: 1;
+    margin: 4px 0px 4px 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+/* --------------------------------------
+ * Pulseaudio
+ * -------------------------------------- */
+
+#pulseaudio {
+	border-bottom: 2px solid green;
+}
+
+#pulseaudio.muted {
+	border-bottom: 2px solid red;
+}
+
+
+/* --------------------------------------
+ * Bluetooth
+ * -------------------------------------- */
+
+#bluetooth, #bluetooth.on, #bluetooth.connected {
+	border-bottom: 2px solid blue;
+}
+
+#bluetooth.off {
+}
+
+
+/* --------------------------------------
+ * Network
+ * -------------------------------------- */
+
+#network {
+	border-bottom: 2px solid green;
+}
+
+#network.ethernet {
+}
+
+#network.wifi {
+}
+
+
+/* --------------------------------------
+ * CPU
+ * -------------------------------------- */
+
+#cpu, #memory, #temperature {
+	border-bottom: 2px solid green;
+}
+
+
+#temperature.critical {
+	border-bottom: 2px solid red;
+}
+
+/* --------------------------------------
+ * Clock
+ * -------------------------------------- */
+
+#clock {
+	border-bottom: 2px solid white;
+}
+
+
+/* --------------------------------------
+ * Tray
+ * -------------------------------------- */
+
+#tray > .passive {
+	-gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+	-gtk-icon-effect: highlight;
+	border-bottom: 2px solid yellow;
+}
+
