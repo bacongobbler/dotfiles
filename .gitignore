@@ -1,5 +1,16 @@
+# music
 config/mpd/database
 config/mpd/state
 config/mpd/sticker.sql
-
 config/ncmpcpp/error.log
+
+# games
+config/StardewValley
+config/unity3d
+
+# work things
+config/1Password
+config/Slack
+
+# misc
+config/dconf
