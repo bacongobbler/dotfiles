@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+port="${1:?Usage: killport PORT}"
+
+lsof -t -i "tcp:${port}" | xargs kill
