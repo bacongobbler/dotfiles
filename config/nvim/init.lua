@@ -15,7 +15,7 @@ opt.signcolumn = 'yes'
 opt.colorcolumn = '120'
 opt.scrolloff = 8
 opt.cmdheight = 2
-opt.textwidth=120
+opt.textwidth = 120
 
 -- "legacy" options for vim
 opt.swapfile = false
@@ -42,4 +42,3 @@ require('ripgrep')
 
 require('lsp/config')
 require('lsp/cmp')
-

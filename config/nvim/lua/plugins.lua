@@ -17,5 +17,9 @@ Plug 'rust-lang/rust.vim'
 
 vim.call('plug#end')
 
-vim.g.colors_name = 'gruvbox'
-vim.opt.background = 'dark'
+--vim.cmd.colorscheme("tesla")
+vim.cmd.colorscheme("django")
+--vim.cmd.colorscheme("MountainDew")
+--vim.cmd.colorscheme("lilac")
+--vim.cmd.colorscheme("olive")
+--vim.cmd.colorscheme("robinhood")
