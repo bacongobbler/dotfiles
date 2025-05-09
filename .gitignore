@@ -11,6 +11,7 @@ config/unity3d
 # work things
 config/1Password
 config/Slack
+config/gh/hosts.yml
 
 # misc
 config/dconf
