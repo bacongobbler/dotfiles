@@ -5,7 +5,7 @@
 [core]
 	editor = nvim
 	whitespace = fix,trailing-space,cr-at-eol
-	excludesfile = ~/.gitignore_global
+	excludesfile = ./ignore
 [commit]
 	gpgsign = true
 	signOff = true
