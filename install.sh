@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 
+rm -rf $HOME/bin
 rm -rf $HOME/.config
-for i in $(ls --color=no); do ln -sf $PWD/$i ~/.$i; done
+
+ln -sf $PWD/bin $HOME/bin
+ln -sf $PWD/dotfiles/bashrc $HOME/.bashrc
+ln -sf $PWD/dotfiles/config $HOME/.config
