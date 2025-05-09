@@ -1,22 +1,5 @@
-config/Code/
-config/Slack/
-config/Unknown Organization/
-config/VirtualBox/
-config/balena-etcher-electron/
-config/enchant/
-config/evolution/
-config/ibus/
-config/monitors.xml
-config/nvim/.netrwhist
-config/obs-studio/logs/
-config/obs-studio/profiler_data/
-config/pulse/
-config/totem/
-config/transmission/
-config/configstore/
-config/dconf/user
-config/mimeapps.list
-config/obs-studio
-config/transmission/
-config/spin-aka
-config/go
+config/mpd/database
+config/mpd/state
+config/mpd/sticker.sql
+
+config/ncmpcpp/error.log
