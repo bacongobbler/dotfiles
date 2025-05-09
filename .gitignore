@@ -8,8 +8,11 @@ config/ncmpcpp/error.log
 config/StardewValley
 config/unity3d
 
-# work things
+# 1Password
 config/1Password
+NativeMessagingHosts
+
+# work things
 config/Slack
 config/gh/hosts.yml
 
