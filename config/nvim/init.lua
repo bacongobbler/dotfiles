@@ -1,5 +1,8 @@
 vim.g.mapleader = " "
 
+-- Set to true if you have a nerd font installed
+vim.g.have_nerd_font = true
+
 ---------- OPTIONS ----------
 
 local opt = vim.opt
