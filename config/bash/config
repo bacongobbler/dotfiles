@@ -53,6 +53,9 @@ export PATH=/usr/local/node/bin:$PATH
 export EDITOR=nvim
 export PATH=/usr/local/neovim/bin:$PATH
 
+# Ruby
+export PATH=$HOME/.local/share/gem/ruby/3.4.0/bin:$PATH
+
 # Rust
 source $HOME/.cargo/env
 
