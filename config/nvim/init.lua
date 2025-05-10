@@ -26,6 +26,10 @@ opt.errorbells = false
 
 require('plugins')
 
+---------- COLORS ----------
+
+require('colors')
+
 ---------- KEYMAPS ----------
 
 require('keymaps')
