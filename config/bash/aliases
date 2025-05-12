@@ -12,6 +12,9 @@ alias mk='minikube'
 alias vi='nvim'
 alias vim='nvim'
 
+# webcam
+alias cam=qv4l2
+
 # novelty
 alias idk='echo -n "¯\_(ツ)_/¯"'
 alias wtf='echo -n "❨╯°□°❩╯︵┻━┻"'
