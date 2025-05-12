@@ -36,15 +36,11 @@ require('colors')
 
 require('keymaps')
 
----------- CLIPBOARD ----------
-
-require('clipboard')
-
 ---------- RIPGREP ----------
 
 require('ripgrep')
 
----------- LSP ----------
+---------- LSP / Autocompletion ----------
 
-require('lsp/config')
-require('lsp/cmp')
+require('lsp')
+require('completion')

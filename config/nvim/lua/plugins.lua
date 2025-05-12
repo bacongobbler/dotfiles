@@ -7,13 +7,11 @@ Plug 'mileszs/ack.vim'
 Plug('junegunn/fzf', {['do'] = vim.fn['fzf#install()']})
 Plug 'junegunn/fzf.vim'
 Plug 'hrsh7th/vim-vsnip'
-Plug 'editorconfig/editorconfig-vim'
 
--- LSP/Language-specific plugins
+Plug 'tpope/vim-fugitive'
+
+Plug 'nvim-treesitter/nvim-treesitter'
+
 Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'rust-lang/rust.vim'
 
 vim.call('plug#end')
-
