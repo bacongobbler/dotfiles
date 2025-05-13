@@ -1,4 +1,3 @@
-
 vim.cmd.colorscheme("django")
 --vim.cmd.colorscheme("tesla")
 --vim.cmd.colorscheme("MountainDew")

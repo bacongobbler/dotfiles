@@ -2,7 +2,7 @@ vim.g.mapleader = " "
 
 
 -- copy to system clipboard
-vim.keymap.set({'n', 'v'}, '<leader>y', [["+y]])
+vim.keymap.set({ 'n', 'v' }, '<leader>y', [["+y]])
 vim.keymap.set('n', '<leader>Y', [["+Y]])
 
 -- navigation
@@ -20,4 +20,3 @@ vim.keymap.set('n', '<leader>pf', ':Rg!<CR>', { desc = 'Find using ripgrep' })
 vim.keymap.set('n', '<leader>pg', ':GFiles<CR>', { desc = 'Find files only in git' })
 
 -- display
-
