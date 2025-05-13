@@ -13,8 +13,13 @@ config/1Password
 NativeMessagingHosts
 
 # work things
+config/discord
+config/google-chrome
 config/Slack
 config/gh/hosts.yml
+config/go
+config/obs-studio
+config/spin-aka
 
 # misc
 config/dconf
