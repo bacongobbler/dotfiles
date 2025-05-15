@@ -13,10 +13,10 @@ opt.number = true
 opt.hidden = true
 opt.guicursor = ''
 opt.signcolumn = 'yes'
-opt.colorcolumn = '120'
+opt.colorcolumn = '100'
 opt.scrolloff = 8
 opt.cmdheight = 2
-opt.textwidth = 120
+opt.textwidth = 100
 
 -- "legacy" options for vim
 opt.swapfile = false
