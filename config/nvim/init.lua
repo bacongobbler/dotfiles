@@ -26,6 +26,8 @@ opt.errorbells = false
 ---------- PLUGINS ----------
 
 require('plugins')
+require('fugitive')
+require('treesitter')
 
 ---------- COLORS ----------
 
