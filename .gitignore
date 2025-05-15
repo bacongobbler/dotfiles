@@ -21,5 +21,8 @@ config/go
 config/obs-studio
 config/spin-aka
 
+# MacOS
+config/iterm2
+
 # misc
 config/dconf

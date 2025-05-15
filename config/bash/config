@@ -1,5 +1,3 @@
-[[ ${TERM,,} == *xterm* ]] && shopt -s checkwinsize
-
 # global
 BLACK=$(tput setaf 0)
 RED=$(tput setaf 1)
@@ -48,6 +46,9 @@ export PATH=$DOTNET_ROOT:$HOME/.dotnet/tools:$PATH
 
 # NodeJS
 export PATH=/usr/local/node/bin:$PATH
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Neovim
 export EDITOR=nvim
@@ -62,7 +63,11 @@ source $HOME/.cargo/env
 # Go
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
-export GOROOT=/usr/lib/go
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	export GOROOT=/opt/homebrew/opt/go/libexec
+else
+	export GOROOT=/usr/lib/go
+fi
 export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
 
 # fzf
@@ -72,6 +77,3 @@ export FZF_DEFAULT_COMMAND="rg --files --hidden"
 
 # protoc
 export PATH=/usr/local/protoc/bin:$PATH
-
-# Node.js
-source $HOME/.nvm/nvm.sh
