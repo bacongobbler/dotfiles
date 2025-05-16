@@ -20,6 +20,7 @@ config/gh/hosts.yml
 config/go
 config/obs-studio
 config/spin-aka
+config/helm
 
 # MacOS
 config/iterm2
