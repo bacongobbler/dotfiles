@@ -8,6 +8,9 @@ alias ls='ls --color'
 alias ll='ls --color -al'
 alias mk='minikube'
 
+# terraform
+alias tf='terraform'
+
 # neovim all the things
 alias vi='nvim'
 alias vim='nvim'
