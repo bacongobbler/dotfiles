@@ -48,3 +48,7 @@ hostname
 DockerHub
 localdev
 dockerhub
+Kubernetes
+vmalert
+LHC
+AlertManager
