@@ -5,6 +5,7 @@ config/mpd/sticker.sql
 config/ncmpcpp/error.log
 
 # games
+config/Battle.net
 config/StardewValley
 config/unity3d
 
@@ -21,6 +22,7 @@ config/go
 config/obs-studio
 config/spin-aka
 config/helm
+config/zed/prompts
 
 # MacOS
 config/iterm2
