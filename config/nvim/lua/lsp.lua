@@ -1,5 +1,7 @@
+local lspconfig = require'lspconfig'
+
 -- Lua
-vim.lsp.config('lua_ls', {
+lspconfig.lua_ls.setup{
 	settings = {
 		Lua = {
 			runtime = {
@@ -18,16 +20,23 @@ vim.lsp.config('lua_ls', {
 			}
 		}
 	}
-})
+}
 vim.lsp.enable('lua_ls')
 
+lspconfig.gopls.setup {}
 vim.lsp.enable('gopls')
+
+lspconfig.rust_analyzer.setup {}
 vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('terraformls')
 vim.lsp.enable('tailwindcss')
 vim.lsp.enable('bashls')
 vim.lsp.enable('dockerls')
 vim.lsp.enable('gh_actions_ls')
+
+lspconfig.omnisharp.setup {
+	cmd = { '/usr/local/omnisharp/OmniSharp' }
+}
 vim.lsp.enable('omnisharp')
 vim.lsp.enable('protols')
 vim.lsp.enable('ruby_lsp')
