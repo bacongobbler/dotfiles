@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# usage: who-is-admin bacongobbler/deis
+
+gh api /repos/$1/collaborators --jq '.[] | select(.permissions.admin) | .login'
