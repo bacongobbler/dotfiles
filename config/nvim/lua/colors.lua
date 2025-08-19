@@ -1,5 +1,6 @@
-vim.cmd.colorscheme("django")
+--vim.cmd.colorscheme("django")
 --vim.cmd.colorscheme("tesla")
+vim.cmd.colorscheme("molokai")
 --vim.cmd.colorscheme("MountainDew")
 --vim.cmd.colorscheme("lilac")
 --vim.cmd.colorscheme("olive")
