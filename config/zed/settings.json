@@ -10,13 +10,14 @@
   "agent": {
     "model_parameters": [],
     "default_model": {
-      "provider": "ollama",
-      "model": "qwen3:8b"
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4"
     },
     "version": "2"
   },
   "ui_font_size": 16,
   "buffer_font_size": 16,
+  "format_on_save": "off",
   "theme": {
     "mode": "system",
     "light": "Catppuccin Macchiato",
