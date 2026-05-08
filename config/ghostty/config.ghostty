@@ -1,5 +1,4 @@
-theme = Catppuccin Frappe
-background-opacity = 0.9
+background-opacity = 0.2
 background-blur = 90
 font-size = 16
 window-padding-x = 10
