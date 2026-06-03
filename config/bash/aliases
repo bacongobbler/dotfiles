@@ -1,6 +1,7 @@
 alias d='docker'
 alias dm='docker-machine'
 alias drmf='docker rm -f $(docker ps -aq)'
+alias drmif='docker rmi -f $(docker images -aq)'
 alias dn='dotnet'
 alias k='kubectl'
 alias l='ls --color'
